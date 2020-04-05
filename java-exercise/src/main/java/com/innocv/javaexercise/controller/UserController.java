@@ -84,8 +84,12 @@ public class UserController {
 				.orElseThrow(() -> new ResourceNotFoundException("User not found for this id :: " + userId));
 		
 		// Set the entity to update
-		userToUpdate.setBirthdate(userUpdateDetails.getBirthdate());
-		userToUpdate.setName(userUpdateDetails.getName());
+		if(null != userUpdateDetails.getBirthdate()) {
+			userToUpdate.setBirthdate(userUpdateDetails.getBirthdate());
+		}
+		if(null != userUpdateDetails.getName()) {
+			userToUpdate.setName(userUpdateDetails.getName());
+		}
 		
 		final User updatedUser = userRepository.save(userToUpdate);
 		return ResponseEntity.ok(updatedUser);

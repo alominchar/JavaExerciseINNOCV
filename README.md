@@ -33,3 +33,5 @@ The parameters to get into de database are:
   - User Name: sa
   - Password: sa
 User name and password can be changed in the appplication.properties file via the properties 'spring.datasource.username' and 'spring.datasource.password'
+
+The application has been tested with the IDE Spring Tool Suite 4 Version: 4.6.0.RELEASE, Maven 3.6.3, Java 8 and Spring Boot 2.2.6

@@ -10,13 +10,13 @@ List of CRUD methods:
   - GET: http://localhost:8080/api/users/ Get all the users from the database
   - GET: http://localhost:8080/api/users/{id} Get the user with id = {id} from the database
   - POST: http://localhost:8080/api/users/ Create a new user in the database
-    · Body format example:
+    - Body format example:
       {
         "name" : "Test",
         "birthdate" : "04-04-2020"
       }
   - PUT: http://localhost:8080/api/users/{id} Update the data of the user with id = {id}
-    · Body format example:
+    - Body format example:
       {
         "name" : "TestUpdate",
         "birthdate" : "04-04-2020"
